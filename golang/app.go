@@ -2,15 +2,12 @@ package main
 
 import "fmt"
 
-func sum(a int,b int) int {
-	return a + b
-}
-
-func dec(c int, d int ) int {
-	return c - d
+func vals() (int,int) {
+	return 7,3
 }
 
 func main() {
-	fmt.Println(sum(2,3))
-	fmt.Println(dec(17,7))
+	a,b := vals()
+	fmt.Println(a)
+	fmt.Println(b)
 }
