@@ -1,13 +1,13 @@
-package main 
+package main
 
-import "fmt"
+import ("fmt"
+		"net/http")
+
+func index_handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello world!")
+}
 
 func main() {
-	x := 15
-	a := &x // addressing variable a to x
-	fmt.Println(a)
-	fmt.Println(*a)
-
-	*a = 5
-	fmt.Println(x)
+	http.HandleFunc("/", index_handler)
+	http.ListenAndServe(":8000" , nil)
 }
