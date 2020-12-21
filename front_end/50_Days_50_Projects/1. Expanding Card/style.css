@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img { 
+    max-width: 900px;
+    max-height: 500px;
+    border-radius: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid white;
+    background-size:auto 100% ;
+    background-position: center;
+    border-radius: 30px;
+    height: 80vh;
+    cursor: pointer;
+    flex: 0.5;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.active {
+    flex: 4;
+}
+
+.active h3 {
+    opacity: 1 !important;
+}
+
+.card h3 {
+    color:white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
