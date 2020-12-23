@@ -29,3 +29,11 @@ x.pop(1)
 print(x)
 x.remove("d")
 print(x)
+
+s = "Reza"
+t = list(s)
+print(t)
+
+s2 = "My name is Reza"
+t2 = s2.split()
+print(t2)
