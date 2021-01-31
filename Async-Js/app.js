@@ -1,11 +1,11 @@
-// sync code example
+// Async code example
 
-function test() {
-    console.log('hey')
-}
+
 
 console.log('Start')
 
-test()
+setTimeout(() => {
+    console.log('Timeout Test')
+},2000) 
 
 console.log('End')
