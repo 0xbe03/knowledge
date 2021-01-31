@@ -1,9 +1,11 @@
 const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve({text:"hi"})
+        reject(new Error("Not Loffed In"))
     },2000)
 })
 
-promise.then(text => {
+promise
+    .then(text => {
     console.log(text)
 })
+    .catch(err => console.log(err.message))
