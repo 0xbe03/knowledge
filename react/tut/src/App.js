@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <div className="content">
       <Home />
-      <h2> {title} </h2>
+      </div>
+
     </div>
   );
 }
