@@ -1,8 +1,12 @@
 import './App.css';
 
 function App() {
+  const name = 'reza'
   return (
-    <h1>Hello from react</h1>
+    <div className="container">
+      <h1>Hello from react</h1>
+      <h2>Hello { name }</h2>
+    </div>
   );
 }
 
