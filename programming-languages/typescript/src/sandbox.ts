@@ -1,9 +1,20 @@
-// dynamic types
+let greet: Function;
 
-let age: any = 25
+greet = () => {
+    console.log('test')
+}
 
-age = true
-age = 'hello'
+const add = (a:number, b: number, c: number|string = 10) => {
+    console.log(a + b)
+    console.log(c)
+}
 
-let mixed: any[] = []
-console.log('test')
+add(5,4,'20')
+
+const minus = (a: number,b: number): number => {
+    return a + b
+}
+
+let result = minus(10,7)
+
+// will automatically change result value to number
