@@ -1,15 +1,24 @@
-let character = 'mario'
-let age = 30
-let isBlackBelt = false 
-// character = 20
-character = 'luigi'
+// arrays
 
-// cant change types in ts
+let names = ['luigi','mario','yoshi']
 
+names.push('toad')
+// names.push(3)
 
-const circ = (diameter) => {
-    return diameter * Math.PI
+let mixed = ['ken',3,4,'reza']
+mixed.push(5)
+mixed.push('test')
+mixed[0] = 'ahmad'
+
+console.log(mixed)
+
+// objects
+let ninja = {
+    name: 'mario',
+    belt: 'black',
+    age: 20
 }
 
+ninja.age = 40
 
-console.log(circ(3))
+console.log(ninja.age)
