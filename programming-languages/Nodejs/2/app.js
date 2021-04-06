@@ -5,6 +5,12 @@ const logger = require('morgan')
 
 const about = require('./routes/about')
 
+// handling errors
+app.use((err,req,res,next) => {
+    console.error(err.stack)
+    res.status(500).send('Something broke!')
+})
+
 app.use(logger('dev'))
 
 app.use('/test',express.static('test'))
